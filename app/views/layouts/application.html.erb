@@ -12,6 +12,7 @@
   <body>
     <header class="row">
       <div class="col-3">
+      <%= link_to root_path, class: 'logo' do %>
         <div class="circle">
           <br />
             coding
@@ -20,12 +21,13 @@
           <br />
             cool
           </div>
+        <% end %>
       </div>
       <div class="col-4">
       Random ass quotes website
       </div>
       <div class="col-5 links">
-        <%= link_to 'add', '#' %>
+        <%= link_to 'add', new_quote_path %>
         <%= link_to 'about', '#' %>
        </div>
     </header>
